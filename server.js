@@ -46,11 +46,6 @@ app.get("/api/dictionary/:slug", async (req, res) => {
   }
 });
 
-// Default route for root (just for testing)
-app.get("/", (req, res) => {
-  res.send("Welcome to the Dictionary API! Available endpoints: /api/dictionary and /api/dictionary/:slug");
-});
-
 // Listen on the dynamic port assigned by Render (or fallback to 5001 for local development)
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
