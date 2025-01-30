@@ -1,0 +1,26 @@
+* text=auto
+
+# Svelte and related files
+*.svelte text
+*.js text
+*.ts text
+*.css text
+*.html text
+*.json text
+*.md text
+*.yaml text
+*.yml text
+
+# Images and other binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+
+# Prevent large files from being added to the repository
+/node_modules/ filter=lfs diff=lfs merge=lfs -text
