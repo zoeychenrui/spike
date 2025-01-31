@@ -20,6 +20,14 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false },  // Required for Render's PostgreSQL connection
 });
 
+pool.connect()
+  .then(() => {
+    console.log('Successfully connected to the database!');
+  })
+  .catch((err) => {
+    console.error('Error connecting to the database: ', err.message);
+  });
+
 // API Route: Fetch all dictionary words
 app.get("/api/dictionary", async (req, res) => {
   try {
