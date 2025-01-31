@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     export let data;
     console.log(data)
     const entries = data?.data || [];
@@ -13,4 +13,5 @@
             </a>
         </li>
     {/each}
-</ul>
+</ul> -->
+<div>hellow!!</div>
